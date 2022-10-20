@@ -34,9 +34,15 @@ function Events(M,B,E) --Check for Map, Btl, and Evt
 end
 
 function Cheats()
-WriteFloat(sys3+0x17AD0, 40)
-WriteFloat(sys3+0x17B14, 50)
-WriteFloat(sys3+0x17B58, 60)
-WriteFloat(sys3+0x17B9C, 80)
-WriteFloat(sys3+0x17BE0, 160)
+WriteFloat(0x250D332, 40) --Glide 1 Speed (Default: 16)
+WriteFloat(0x250D376, 50) --Glide 2 Speed (Default: 20)
+WriteFloat(0x250D3BA, 60) --Glide 3 Speed (Default: 24)
+WriteFloat(0x250D3FE, 80) --Glide MAX Speed (Default: 32)
+WriteFloat(0x250D442, 160) --Glide AX2 Speed (Default: 64)
+--Glide Turn Speeds: Default is 0.05235987902
+WriteFloat(0x250D34E, 0.1)
+WriteFloat(0x250D392, 0.2)
+WriteFloat(0x250D3D6, 0.3)
+WriteFloat(0x250D41A, 0.4)
+WriteFloat(0x250D45E, 0.5)
 end
